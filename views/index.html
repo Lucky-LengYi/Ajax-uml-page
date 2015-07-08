@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./main.css">
+<script type="text/javascript" src="./jquery.js"></script>
+<body>
+    <div class="border">
+        <div class="page">
+            <br>
+                西安软件服务外包学院
+            <hr>
+            <div class="title">
+                统一建模语言理论测试
+            </div>
+
+            <form action="" method="post">
+                <div class="title_info">
+                    <br>
+                    考试科目 ：<input type="text" name="subject" value="统一建模语言UML" readonly="readonly" >
+                    时间 ：<input type="text" name="time" value="100分钟" readonly="readonly">
+                    得分 ：<input id="score" type="text" name="score" readonly="readonly" value="<%=score%>"><br><br>
+
+                    班&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp级 ：<input id="class_id" type="text" name="class_id" placeholder="必须填写">
+                    学号 ：<input id="stu_id" type="text" name="stu_id" placeholder="必须填写">
+                    姓名 ：<input id="stu_name" type="text" name="stu_name" placeholder="必须填写"> <br>
+                    <input type="text" id="info" name="info" size=40 disabled="disabled"><br>
+
+                    <b>一、填空题</b><br><br>
+                    1 . UML的中文全称是 ： <input type="text" id="uml" name="question-1"><br>
+                    2 . 对象最突出的特征是 ： <input type="text" name="question-2">、
+                                              <input type="text" name="question-2">、
+                                              <input type="text" name="question-2"><br>
+                    <br>
+                </div>
+                <div id="choose_question">
+                    <div class="main_question">
+                        <b>二、选择题</b> <br><br>
+                        1 . UML和软件工程的关系是：【 <input type="text" id="question-3" name="question-3" readonly="readonly" size="1">】<br>
+
+                        <input type="radio" name="tion-3" value="A"> A : UML就是软件工程<br>
+                        <input type="radio" name="tion-3" value="B"> B : UML参与到软件工程中软件开发过程的几个阶段<br>
+                        <input type="radio" name="tion-3" value="C"> C : UML与软件工程无关<br>
+                        <input type="radio" name="tion-3" value="D"> D : UML是软件工程的一部分<br><br>
+                        2 . Java语言支持：【 <input type="text" id="question-4" name="question-4" readonly="readonly" size="1">】<br>
+                        <input type="radio" class="tion-4" name="tion-4" value="A"> A : 单继承<br>
+                        <input type="radio" class="tion-4" name="tion-4" value="B"> B : 多继承<br>
+                        <input type="radio" class="tion-4" name="tion-4" value="C"> C : 单继承和多继承都支持<br>
+                        <input type="radio" class="tion-4" name="tion-4" value="D"> D : 单继承和多继承都不支持<br><br>
+
+                        <b>三、多选题</b> <br><br>
+                        1 . 用例的粒度分为以下哪三种：【<input type="text" id="question-5" name="question-5" readonly="readonly" size="4">】<br>
+                        <input id="choose_3" type="checkbox" name="tion-5" value="A"> A : 概述级、<br>
+                        <input id="choose_3" type="checkbox" name="tion-5" value="B"> B : 需求级、<br>
+                        <input id="choose_3" type="checkbox" name="tion-5" value="C"> C : 用户目标级、<br>
+                        <input id="choose_3" type="checkbox" name="tion-5" value="D"> D : 子功能级、<br><br>
+                        2 . 类图由以下哪三部分组成：【<input type="text" id="question-6" name="question-6" readonly="readonly" size="4">】<br>
+                        <input id="choose_4" type="checkbox" name="tion-6" value="A"> A : 名称(Name)<br>
+                        <input id="choose_4" type="checkbox" name="tion-6" value="B"> B : 属性(Attribute)<br>
+                        <input id="choose_4" type="checkbox" name="tion-6" value="C"> C : 操作(Operation)<br>
+                        <input id="choose_4" type="checkbox" name="tion-6" value="D"> D : 方法(Function)<br><br>
+                    </div>
+
+                    <b>四、判断题</b> <br><br>
+                    1. 用例图只是用于和客户交流和沟通的,用于确定需求。
+                    <input type="hidden" id="question-7" name="question-7">
+                    <input type="radio" name="tion-7" value="true">√
+                    <input type="radio" name="tion-7" value="false">×<br>
+                    2. 在状态图中,终止状态在一个状态图中允许有任意多个。
+                    <input type="hidden" id="question-8" name="question-8">
+                    <input type="radio" name="tion-8" value="true">√
+                    <input type="radio" name="tion-8" value="false">×<br><br>
+                </div>
+                <b>五、简答题(每题4分,共20分)</b> <br><br>
+                1. 简述什么是模型以及模型的表现形式? <br>
+                <textarea rows="5" cols="50" name="question-9"></textarea><br><br>
+                <input id="submit" type="button" name="submit" value="提交">
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./main.js"></script>
+</html>

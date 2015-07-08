@@ -1,0 +1,15 @@
+{
+  "name": "home-work",
+  "version": "1.0.0",
+  "devDependencies": {
+    "body-parser": "^1.13.1",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0",
+    "jQuery": "^1.7.4",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.0"
+  },
+  "dependencies": {
+    "jQuery": "^1.7.4"
+  }
+}
